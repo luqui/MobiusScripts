@@ -1,0 +1,15 @@
+!name ActiveTrackMute
+!autoload
+
+variable tracks
+if trackNumber <= 4
+    set tracks 1 2 3 4
+else
+    set tracks 5 6 7 8
+endif
+
+for $tracks
+    if focus
+        Mute
+    endif
+next
