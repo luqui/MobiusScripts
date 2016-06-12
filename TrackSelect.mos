@@ -1,0 +1,26 @@
+!name TrackSelect
+!autoload
+
+!sustain
+
+variable activeTrack 1
+
+if mode = reset
+# if there's nothing in the slot, record
+    Record
+
+# otherwise, set the active track to this one
+else
+    if mode = record
+        Record
+    end
+    set activeTrack $trackNumber
+endif
+
+end
+
+label sustain
+if sustainCount = 1
+    Reset
+endif
+end
