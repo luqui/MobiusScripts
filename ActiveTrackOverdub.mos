@@ -1,8 +1,8 @@
-!name ActiveTrackMute
+!name ActiveTrackOverdub
 !autoload
 
 proc Execute
-    Mute
+    Overdub
 endproc
 
 # boilerplate

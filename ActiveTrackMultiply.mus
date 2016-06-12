@@ -1,8 +1,8 @@
-!name ActiveTrackMute
+!name ActiveTrackMultiply
 !autoload
 
 proc Execute
-    Mute
+    Multiply
 endproc
 
 # boilerplate
