@@ -1,9 +1,27 @@
 !name TrackSelect
 !autoload
-
 !sustain
 
-variable activeTrack 1
+variable player
+if trackNumber <= 4
+    set player 1
+else
+    set player 2
+endif
+
+proc ClearFocus
+    Message player $player
+    if player = 1
+        for 1 2 3 4
+            set focus false
+        next
+    else
+        for 5 6 7 8
+            set focus false
+        next
+    endif
+endproc
+
 
 if mode = reset
 # if there's nothing in the slot, record
@@ -13,8 +31,9 @@ if mode = reset
 else
     if mode = record
         Record
-    end
-    set activeTrack $trackNumber
+    endif
+    call ClearFocus
+    set focus true
 endif
 
 end
