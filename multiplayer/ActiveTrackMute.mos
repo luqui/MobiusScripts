@@ -1,0 +1,21 @@
+!name ActiveTrackMute
+!autoload
+
+proc Execute
+    Mute
+endproc
+
+# boilerplate
+if trackNumber <= 4
+    for 1 2 3 4
+        if focus
+            call Execute
+        endif
+    next
+else
+    for 5 6 7 8
+        if focus
+            call Execute
+        endif
+    next
+endif
