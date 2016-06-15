@@ -1,5 +1,4 @@
 !name ActiveTrackMute
-!autoload
 
 proc Execute
     Mute

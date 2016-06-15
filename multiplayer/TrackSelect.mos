@@ -1,5 +1,4 @@
 !name TrackSelect
-!autoload
 !sustain
 
 # We use 'focus' to indicate which track is selected for each player.

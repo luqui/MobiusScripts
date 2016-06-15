@@ -1,5 +1,4 @@
 !name ActiveTrackMultiply
-!autoload
 
 proc Execute
     Multiply
