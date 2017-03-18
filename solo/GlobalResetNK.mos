@@ -1,0 +1,30 @@
+!name GlobalResetNK
+
+MidiOut noteoff 1 64 0
+MidiOut noteoff 1 65 0
+MidiOut noteoff 1 66 0
+MidiOut noteoff 1 67 0
+MidiOut noteoff 1 68 0
+MidiOut noteoff 1 69 0
+MidiOut noteoff 1 70 0
+MidiOut noteoff 1 71 0
+
+MidiOut noteoff 1 48 0
+MidiOut noteoff 1 49 0
+MidiOut noteoff 1 50 0
+MidiOut noteoff 1 51 0
+MidiOut noteoff 1 52 0
+MidiOut noteoff 1 53 0
+MidiOut noteoff 1 54 0
+MidiOut noteoff 1 55 0
+
+MidiOut noteon 1 32 127
+MidiOut noteoff 1 33 0
+MidiOut noteoff 1 34 0
+MidiOut noteoff 1 35 0
+MidiOut noteoff 1 36 0
+MidiOut noteoff 1 37 0
+MidiOut noteoff 1 38 0
+MidiOut noteoff 1 39 0
+
+GlobalReset

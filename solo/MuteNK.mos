@@ -1,0 +1,11 @@
+!name MuteNK
+
+variable noteTrigger 47 + trackNumber
+
+if inMute
+    MidiOut noteoff 1 $noteTrigger 0
+    MuteOff
+else
+    MidiOut noteon 1 $noteTrigger 127
+    MuteOn
+endif

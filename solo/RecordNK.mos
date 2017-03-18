@@ -1,0 +1,20 @@
+!name RecordNK
+!sustain
+
+variable noteTrigger 63 + trackNumber
+
+MidiOut noteon 1 $noteTrigger 127
+Record
+End
+
+label sustain
+if sustainCount > 1
+    MidiOut noteoff 1 $noteTrigger 0
+    Reset
+endif
+end
+
+label setup
+MidiOut noteoff 1 $noteTrigger 0
+End
+

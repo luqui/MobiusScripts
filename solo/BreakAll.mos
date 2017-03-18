@@ -1,0 +1,14 @@
+!name BreakAll
+
+Variable Global doBreak true
+
+GlobalMute
+if doBreak
+    set doBreak false
+else
+    set doBreak true
+
+    for *
+        Move 0
+    next
+endif

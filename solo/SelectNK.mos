@@ -1,0 +1,9 @@
+!name SelectNK
+
+Variable controlNumber (31 + $1)
+Track $1
+for *
+    Variable tempControlNumber (31 + trackNumber)
+    MidiOut noteoff 1 tempControlNumber 0
+next
+MidiOut noteon 1 controlNumber 127
